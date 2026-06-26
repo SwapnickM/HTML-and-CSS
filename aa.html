@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Web Development</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(231, 123, 123);
+}
+
+/* HEADER */
+.x{
+    display: flex;
+
+}
+.x img{
+    padding:20px;
+}
+header{
+    background: linear-gradient(60deg,rgb(139, 88, 173),rgb(133, 36, 81));
+    border-radius: 12px;
+}
+
+.swapnick{
+    flex:1;
+    text-align:center;
+}
+/* NAVIGATION */
+nav{
+    background:rgb(75, 131, 137);
+    padding:10px;
+    margin: 10px;
+    font-size: x-large;
+    border-radius: 12px;
+    
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:40px;
+}
+nav a{
+    text-decoration:none;
+    color:#1e293b;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+/* MAIN LAYOUT */
+.main{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:2fr 2fr;
+    gap:20px;
+}
+
+/* SECTION */
+.section-box{
+    background:rgb(200, 200, 223);
+    border-left:6px solid #294a91;
+    padding:25px;
+    border-radius:12px;
+}
+
+.section-content{
+    justify-content:space-between;
+    align-items:center;
+}
+
+.section-box h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.section-box p{
+    line-height:1.8;
+}
+
+/* ARTICLE */
+.article-box{
+    margin-top:20px;
+    background:rgb(234, 196, 175);
+    border-left:6px solid #fa0e0a;
+    padding:25px;
+    border-radius:12px;
+}
+
+.article-box h2{
+    color:#dc2626;
+    margin: bottom 20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    border:1px solid #4f427b;
+}
+
+/* ASIDE */
+aside{
+    background:rgb(197, 224, 199);
+    padding:25px;
+    border-radius:12px;
+    border-right:6px solid #4ad588;
+}
+
+aside h2{
+    color:#16a34a;
+    margin-bottom:20px;
+}
+
+.resource{
+    background:#eef6ff;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.resource a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    margin-top:20px;
+    background:#0f172a;
+    color:rgb(215, 212, 11);
+    text-align:center;
+    padding:25px;
+    border-radius:12px;
+}
+</style>
+</head>
+<body>
+
+<header class="x">
+    <div>
+        <img src="ngitlogo.jpg" alt="NGIT" height="100px" width="150px">    
+    </div>
+
+    <div class="swapnick">
+        <h1>WEB DEVELOPMENT</h1>
+        <h2>Neil Gogte Institute of Technology</h2>
+        <p>Course : Web Programming</p>
+        <p>Student : M.Swapnick</p>   
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <span><li><a href="#Home">Home</a></li></span>
+        <span><li><a href="#Overview">Overview</a></li></span>
+        <span><li><a href="#Topics">Topics</a></li></span>
+        <span><li><a href="#Media">Media</a></li></span>
+        <span><li><a href="#Projects">Projects</a></li></span>
+        <span><li><a href="#resources">Resources</a></li></span>
+    </ul>
+</nav>
+
+<div class="main">
+
+    
+    <div>
+        <section class="section-box" id="Overview">
+
+            <h2>SECTION : What is Web Development?</h2>
+
+            <div class="section-content">
+
+                    <p>
+                        Web development is the process of designing,
+                        building, and maintaining websites and web
+                        applications. It involves front-end technologies
+                        such as HTML, CSS, JavaScript and back-end
+                        technologies like databases and servers.
+                    </p>
+            </div>
+
+        </section>
+
+        <article class="article-box" id="Topics">
+
+            <h2>ARTICLE : Core Concepts</h2>
+
+            <table>
+                <tr>
+                    <th>Technology</th>
+                    <th>Purpose</th>
+                </tr>
+
+                <tr>
+                    <td>HTML</td>
+                    <td>Creates webpage structure</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Styles webpages</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Adds interactivity</td>
+                </tr>
+
+                <tr>
+                    <td>Web Server</td>
+                    <td>Hosts website files</td>
+                </tr>
+
+                <tr>
+                    <td>Database</td>
+                    <td>Stores application data</td>
+                </tr>
+
+            </table>
+
+        </article>
+    </div>
+
+
+    <aside>
+
+        <div class="ASIDE PANEL" id="Media">
+        
+
+        <h2>ASIDE PANEL</h2>
+
+        <h3>Learning Video</h3>
+
+        <video width="400" controls>
+            <source src="sample.mp4" type="video/mp4">
+
+
+        </video>
+
+        <br><br>
+
+            <h3>Audio Tutorial</h3>
+
+            <audio controls>
+            <source src="Audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+
+        </div>
+
+        <h3>Useful Resources</h3>
+
+        <div class="resource" id="resources">
+            <a href="https://www.w3schools.com" target="_main">W3Schools</a>
+        </div>
+
+        <div class="resource">
+            <a href="https://developer.mozilla.org">
+                MDN Documentation
+            </a>
+        </div>
+
+        <div class="resource">
+            <a href="https://www.freecodecamp.org">
+                freeCodeCamp
+            </a>
+        </div>
+
+        <div class="resource">
+            <a href="https://www.geeksforgeeks.org">
+                GeeksforGeeks
+            </a>
+        </div>
+
+    </aside>
+
+</div>
+
+<footer>
+    <h3>Web Development Assignment 2026</h3>
+    <p>Designed by M.Swapnick</p>
+</footer>
+
+</body>
+</html>
